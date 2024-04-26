@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS String Functions</title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <script>
+        var str = "A string";
+        console.log(str);
+
+        //First position of string
+        var position = str.indexOf('A');
+        console.log(position);
+
+
+        //Last position of string
+        var position = str.lastIndexOf('A');
+        console.log(position);
+
+        //Substring from a string or slicing
+        //var substr =str.slice(2,8);
+        //diff between substring and slice is that slice 
+        // can also accept negative values
+        //var substr =str.substring(2,7);
+
+        //first letter from where to start and
+        // second parameter how many charecters
+        var substr =str.substr(2,7);
+        console.log(substr);
+
+        
+        var replaced = str.replace('A', 'This');
+        console.log(replaced);
+
+        console.log(str.toUpperCase());
+        console.log(str);
+
+        var newString = str.concat(' new String');
+        console.log(newString);
+
+
+        //it trims spaces from start and end
+        var a ='         whit spppppppppppp';
+        console.log(a);
+        console.log(a.trim());
+
+        
+        console.log(str[5]);
+
+
+    </script>
+    
+</body>
+</html>
