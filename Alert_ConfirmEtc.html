@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using alert, comfirm and prompt</title>
+</head>
+<body>
+    <div class="container">
+        This is a page
+    </div>
+
+    <script>
+        //alert in js, does not return anything
+        // let a =alert("This is a message");
+        // the above line code will not work
+        alert("This is a message");
+
+        let name = prompt("What is your name?", "Guest");
+        console.log(name);
+
+        let deletePost =  confirm("are you sure?");
+        console.log(deletePost);
+        // confirm returns true on clicking yes and false on clicking no
+        if(deletePost){
+            console.log("Post is deleted succesully.");
+        }
+        else{
+            console.log("Not deleted.");
+        }
+    </script>
+</body>
+</html>
