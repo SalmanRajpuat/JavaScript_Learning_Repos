@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JavaScript</title>
+</head>
+
+<body>
+    <div class="conatiner">
+        This is a page
+    </div>
+
+    <script>
+        let friends = ["Rohan", "Salman", "Ramzan", "Zakir"];
+        //  for(let i=0; i<friends.length; i++){
+        //     console.log(friends[i]);
+        //  }
+        
+        //friends.forEach(function f(element) {
+        //    console.log("Hello Friend," + element + " To Modern Js")
+        //});
+
+           // for(element of friends){
+            //    console.log("Hello Friend" + element + " To Modern Js");
+            //}
+
+
+            let employee =  {
+                name: "Salman",
+                salary: 10000000,
+                channel: "Gwen-Z",
+                channel2: "ProgrammingWithHarry",
+            }
+// use this loop to iterate over objects
+            for( key in employee){
+                console.log(`The ${key} of employee is ${employee[key]}`);
+            }
+
+    </script>
+</body>
+
+</html>
