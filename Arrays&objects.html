@@ -12,14 +12,37 @@
 
     <script>
         let myVar=34;
+        let myVar2="String";
+        let myVar3=true;
+        let myVar4=null;
+        let myVar1 =undefined;
+        let var5;// its default value will be undefined
+        
+
 
         let employee =  {
             name: "Salman",
             salary: 10000000,
             channel: "Gwen-Z",
-            channel12: "ProgrammingWithHarry",
+            channel2: "ProgrammingWithHarry",
         }
         console.log(employee)
+        console.log(employee.channel)
+
+
+        let names = [3,2,3,"Salman", undefined];
+        console.log(names);
+        console.log(names.length);
+        names = names.sort();
+        console.log(names);
+        names.push("This is pushed");
+        console.log(names);
+
+
+        let name = new Array(23);
+        name.push("Hello");
+        console.log(name);
+
     </script>
 </body>
 
